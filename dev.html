@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@kjn/svg-minimap dev</title>
+  </head>
+  <body>
+    <svg id="svg" width="500" height="500">
+      <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      <ellipse cx="250" cy="250" rx="150" ry="150"></ellipse>
+    </svg>
+    <div id="minimapContainer" style="width: 100px; height: 100px; border: 1px solid red"></div>
+
+    <script type="module">
+      import SvgMinimap from "./src/index";
+
+      new SvgMinimap(document.getElementById("svg"), document.getElementById("minimapContainer"));
+    </script>
+  </body>
+</html>

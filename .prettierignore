@@ -1,0 +1,7 @@
+# As a rule of thumb all .gitignore files can be placed here
+node_modules
+dist
+
+# Other generated files
+package-lock.json
+.parcel-cache
