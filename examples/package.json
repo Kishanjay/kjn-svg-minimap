@@ -1,17 +1,17 @@
 {
-  "name": "examples",
+  "name": "@kjn/svg-minimap-examples",
   "version": "0.0.0",
   "private": true,
   "description": "",
   "scripts": {
     "start": "parcel index.html",
-    "dev": "npm --prefix .. install && npm --prefix .. run watch && npm start",
-    "build": "npm --prefix .. install && npm --prefix .. build"
+    "build": "rm -rf ./dist && parcel build index.html"
   },
   "author": "Kishan Nirghin",
   "license": "ISC",
   "devDependencies": {
-    "@kjn/svg-minimap": "file:..",
+    "@kjn/svg-minimap": "^1.0.0",
+    "@kjn/svg-pan-zoom": "^1.1.6",
     "parcel": "^2.5.0"
   }
 }
