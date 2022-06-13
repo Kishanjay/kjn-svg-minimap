@@ -65,6 +65,11 @@ export default class SvgMinimap {
     const viewBoxWidth = svgDimensions.maxX - svgDimensions.minX;
     const viewBoxHeight = svgDimensions.maxY - svgDimensions.minY;
     const minimapViewBox = `${svgDimensions.minX} ${svgDimensions.minY} ${viewBoxWidth} ${viewBoxHeight}`;
+
+    // Minimap should fill the container it is placed inside of
+    minimap.style.width = "100%";
+    minimap.style.height = "100%";
+
     minimap.setAttribute("viewBox", minimapViewBox);
 
     // Now we're copying every item of the svg element to the minimap.

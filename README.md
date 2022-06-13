@@ -23,6 +23,6 @@ new SvgMinimap(document.getElementById("svg"), document.getElementById("minimapC
 ```
 
 Assuming that we have a `<svg>` element that contains various svg drawings.
-AND that there exists a preferably bounded container where the minimap should be placed into.
+AND that there exists a (preferably bounded) container where the minimap should be placed into.
 
 For more details on how to use, check the examples directory.
